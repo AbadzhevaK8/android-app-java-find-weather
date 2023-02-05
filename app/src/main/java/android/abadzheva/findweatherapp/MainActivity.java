@@ -4,7 +4,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -15,16 +15,12 @@ import org.json.JSONObject;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
-import java.util.Date;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements GetData.AsyncResponse{
     private static final String TAG = "MainActivity";
-    private Button searchBtn;
     private EditText cityField;
     private TextView cityName;
 
@@ -34,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements GetData.AsyncResp
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        searchBtn = findViewById(R.id.btnSearch);
         cityField = findViewById(R.id.cityField);
         cityName = findViewById(R.id.cityName);
     }
@@ -82,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements GetData.AsyncResp
         URL url = buildUrl(cityField.getText().toString());
         cityName.setText(cityField.getText().toString());
         new GetData(this).execute(url);
+        cityField.onEditorAction(EditorInfo.IME_ACTION_DONE);
     }
 
 

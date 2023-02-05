@@ -47,8 +47,9 @@
 
     <TextView
         android:id="@+id/temperature1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/temperature"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/pressure1"
@@ -58,8 +59,9 @@
 
     <TextView
         android:id="@+id/pressure1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/pressure"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/rise1"
@@ -69,8 +71,9 @@
 
     <TextView
         android:id="@+id/rise1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/sunrise"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/set1"
@@ -80,8 +83,9 @@
 
     <TextView
         android:id="@+id/set1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/sunset"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,6 +97,7 @@
         android:id="@+id/temperature2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="@string/temperature"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/pressure2"
@@ -104,6 +109,7 @@
         android:id="@+id/pressure2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="@string/pressure"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/rise2"
@@ -115,6 +121,7 @@
         android:id="@+id/rise2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="@string/sunrise"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/set2"
@@ -126,6 +133,7 @@
         android:id="@+id/set2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="@string/sunset"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
