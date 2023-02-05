@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Find Weather App</string>
+    <string name="temperature">Temperature</string>
+    <string name="pressure">Pressure</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="enter_city_name">Enter city name</string>
+    <string name="search">search</string>
+</resources>
